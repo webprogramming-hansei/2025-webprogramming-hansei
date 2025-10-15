@@ -1,0 +1,35 @@
+.holy-grail {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    flex-basis: 200px;
+    background: #f8f9fa;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+aside {
+    flex-basis: 150px;
+    background: #e9ecef;
+}
+
+@media (max-width: 768px) {
+    main {
+        color: red;
+    }
+
+    .rsImage {
+        width: 200px;
+    }
+}
