@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또번호 자동 생성기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 히어로 섹션: 45개의 떠다니는 공 -->
+    <section class="hero-section">
+        <div class="floating-balls-container" id="floatingBalls">
+            <!-- JavaScript로 동적 생성 -->
+        </div>
+        <div class="hero-content">
+            <h1>로또번호 자동 생성기</h1>
+            <p>행운의 번호를 받아보세요!</p>
+        </div>
+    </section>
+
+    <!-- 생성 버튼 섹션 -->
+    <section class="generate-section">
+        <button class="generate-btn" id="generateBtn">
+            <span>🍀</span> 로또번호 자동 생성
+        </button>
+    </section>
+
+    <!-- 현재 생성된 번호 표시 -->
+    <section class="result-section">
+        <h2>생성된 번호</h2>
+        <div class="lotto-balls" id="resultBalls">
+            <p class="empty-message">버튼을 클릭하여 번호를 생성하세요</p>
+        </div>
+    </section>
+
+    <!-- 히스토리 섹션 -->
+    <section class="history-section">
+        <div class="history-header">
+            <h2>생성 히스토리</h2>
+            <button class="clear-history-btn" id="clearHistoryBtn">전체 삭제</button>
+        </div>
+        <div class="history-list" id="historyList">
+            <p class="empty-message">아직 생성된 번호가 없습니다</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
